@@ -18,6 +18,7 @@ function App() {
 
   useEffect(() => {
     handleListen();
+    // eslint-disable-next-line
   }, [isListening]);
 
   const handleListen = () => {
