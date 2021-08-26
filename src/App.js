@@ -94,9 +94,11 @@ function App() {
 
           <div className='m-1 p-5 bg-light shadow-sm col'>
             <h2>Notes</h2>
-            {savedNotes.map((n) => (
-              <p key={uuid()}>{n}</p>
-            ))}
+            <ul>
+              {savedNotes.map((n) => (
+                <li key={uuid()}>{n}</li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
